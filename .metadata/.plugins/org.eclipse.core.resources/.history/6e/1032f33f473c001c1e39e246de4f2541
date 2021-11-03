@@ -1,0 +1,17 @@
+package com.example.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.Employee;
+import com.example.config.ApplicationConfig;
+
+import lombok.extern.java.Log;
+
+@Log
+public class EmployeeBeanTest2 {
+	public static void main(String[] args) {
+		// Create Spring Container
+		
+	}
+}

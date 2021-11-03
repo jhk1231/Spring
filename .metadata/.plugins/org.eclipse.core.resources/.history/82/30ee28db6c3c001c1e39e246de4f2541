@@ -1,0 +1,10 @@
+package com.example;
+
+import lombok.extern.java.Log;
+
+@Log
+public class MainClass {
+	public static void main(String[] args) {
+		
+	}
+}

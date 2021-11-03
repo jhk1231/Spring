@@ -1,0 +1,18 @@
+package com.example;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class Main {
+	public static void main(String[] args) {
+
+		ApplicationContext ctx = new GenericXmlApplicationContext("classpath:beans.xml");
+		Hello hello = ctx.getBean("hello", Hello.class);
+		 System.out.println(hello.sayHello());
+//		if(hello.sayHello().equals("Hello 한지민")) {
+//			System.out.println("Equals");
+//		} else {
+//			System.out.println("Different");
+//		}
+	}
+}

@@ -1,0 +1,18 @@
+package com.example.test;
+
+import com.example.Employee;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+//@Component // employeeInfo
+public class EmployeeInfo {
+	// EmployeeInfo를 통해서 Imployee를 설정
+	private Employee employee;
+}

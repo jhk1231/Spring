@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 	<bean id="chulsu" class="com.example.Student">
+		<property name="name" value="김철수" />
+		<property name="age" value="16" />
+		<property name="grade" value="3" />
+		<property name="classNum" value="5" />
+	</bean>
+	<bean id="studentInfo" class="com.example.StudentInfo">
+		<property name="student" ref="chulsu" />
+	</bean>
+	 -->
+	<!-- 생성자 주입 방법 -->
+	<bean id="younghee" class="com.example.Student">
+		<constructor-arg name="name" value="이영희" />
+		<constructor-arg name="age" type="int" value="18" />
+		<constructor-arg name="grade" value="2" />
+		<constructor-arg name="classNum">
+			<value>9</value>
+		</constructor-arg>
+	</bean>
+	<bean id="info" class="com.example.StudentInfo">
+		<constructor-arg name="student" ref="younghee" />
+	</bean>
+
+</beans>

@@ -1,0 +1,18 @@
+package com.example.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.example.Employee;
+
+@Configuration
+public class ApplicationConfig {
+	
+	// ID가 메소드 이름이야
+	// Return 타입이 value 다
+	@Bean
+	public Employee smith() {
+		
+	}
+	
+}

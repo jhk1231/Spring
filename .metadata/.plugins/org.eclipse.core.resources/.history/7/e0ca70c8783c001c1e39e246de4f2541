@@ -1,0 +1,8 @@
+package com.example;
+
+public class Product {
+	private String name;
+	private int price;
+	private String maker;
+	private String color;
+}

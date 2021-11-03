@@ -1,0 +1,9 @@
+package com.example;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class Main {
+	ApplicationContext ctx = new GenericXmlApplicationContext("classpath: beans.xml");
+	
+	
+}

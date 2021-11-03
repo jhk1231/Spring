@@ -1,0 +1,30 @@
+package com.example.test;
+
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.ApplicationConfig2;
+
+class StudentBeanJUnitTest {
+	private ApplicationContext ctx;
+	
+	@BeforeEach
+	public void init() {
+		this.ctx = new
+				AnnotationConfigApplicationContext(ApplicationConfig2.class);
+	}
+	
+	// 1. ctx가 null값인지 확인
+	@Test
+	void test() {
+		assertNotNull(this.ctx);
+	}
+	
+	@Test
+	void
+
+}

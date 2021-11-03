@@ -1,0 +1,17 @@
+package com.example.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import com.example.Employee;
+
+public class EmployeeBeanTest {
+	public static void main(String[] args) {
+		// Create Spring Container
+		// XML로 Bean 설정 방식
+		ApplicationContext ctx = 
+				new GenericXmlApplicationContext("classpath:applicationContext.xml");
+		Employee smith = ctx.getBean("smith", Employee.class);
+		System.out.println(smith.toString());
+	}
+}

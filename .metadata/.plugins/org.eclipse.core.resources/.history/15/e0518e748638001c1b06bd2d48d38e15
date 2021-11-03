@@ -1,0 +1,16 @@
+package com.example.test;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+
+// 이것은 Junit만이 아닌 Spring이랑도 연동한다.
+public class HelloBeanJunitSpringTest {
+	@Autowired
+	private ApplicationContext ctx;
+	
+	@RunWith()
+	
+	@ContextConfiguration()
+	
+	
+}

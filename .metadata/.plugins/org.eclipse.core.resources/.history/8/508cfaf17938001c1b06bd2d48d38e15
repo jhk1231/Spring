@@ -1,0 +1,9 @@
+package com.example;
+
+public class ConsolePrinter implements Printer {
+
+	@Override
+	public void print(String mesage) {
+		System.out.println(message);
+	}
+}

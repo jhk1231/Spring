@@ -1,0 +1,24 @@
+package com.example.test;
+
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+
+import com.example.config.AppCtx;
+
+
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes= AppCtx.class)
+public class HelloBeanJUnitSpringTest {
+	@Autowired
+	private ApplicationContext ctx;
+	
+	
+	
+	
+	
+	
+	
+	
+}

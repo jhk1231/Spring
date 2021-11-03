@@ -1,0 +1,23 @@
+package com.example.test;
+
+import static org.junit.Assert.fail;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+
+public class HelloBeanJUnitTest {
+	
+	private ApplicationContext ctx;
+	
+	@Before
+	public void init() {
+		this.ctx = new AnnotationConfigApplicationContext();
+	}
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

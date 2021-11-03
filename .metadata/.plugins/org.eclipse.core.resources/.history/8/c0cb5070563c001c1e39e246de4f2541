@@ -1,0 +1,16 @@
+package com.example.test;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+class EmployeeBeanJUnitTest {
+
+	private AnnotationConfigApplicationContext ctx;
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

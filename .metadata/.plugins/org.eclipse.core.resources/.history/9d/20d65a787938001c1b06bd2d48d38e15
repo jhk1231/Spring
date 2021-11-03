@@ -1,0 +1,14 @@
+package com.example;
+
+
+public class Hello {
+	private String name;
+	private Printer printer;
+	public String sayHeelo() {
+		return "Hello" + name;
+	}
+
+	public void print() {
+		this.printer.print(sayHello());
+	}
+}

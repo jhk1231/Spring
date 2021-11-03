@@ -1,0 +1,14 @@
+package com.example;
+
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@RequiredArgsConstructor
+@ToString
+public class Product {
+	private @NonNull String name;
+	private @NonNull int price;
+	private @Setter String maker;
+	private @Setter String color;
+}

@@ -1,0 +1,25 @@
+package com.example.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.Hello;
+import com.example.config.AppCtx;
+
+public class HelloBeanTest {
+	public static void main(String[] args) {
+
+		// 1. IOC Container 생성
+		// ()안에 들어있는 class에 환경설정이 들어가 있다
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppCtx.class);
+
+		Hello hello = ctx.getBean("hello", Hello.class);
+		
+		if(hello.sayHello().equals("Hello김지민")) {
+			System.out.println("Equals");
+		} else {
+			System.out.println("Different");
+		}
+		
+	}
+}

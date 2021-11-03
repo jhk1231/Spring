@@ -1,0 +1,41 @@
+package com.example.test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import com.example.Hello;
+import com.example.Printer;
+
+public class HelloBeanJUnitTest {
+	private ApplicationContext context;
+
+	@Before
+	public void init() {
+		// ApplicationContext 항상 먼저 를 생성해야 하기 때문에
+		// 1. IoC Container 생성
+		context = new GenericXmlApplicationContext("classpath:beans.xml");
+	}
+
+	@Test
+	public void test1() {
+		// 2. Hello Beans 가져오기
+		Hello hello = (Hello) context.getBean("hello");
+		assertEquals("Hello Spring", hello.sayHello());
+		hello.print();
+
+		// 3. SpringPrinter 가져오기
+		Printer printer = (Printer) context.getBean("printer");
+		assertEquals("Hello Spring", printer.toString());
+	}
+
+	@Test
+	 public void test2(){
+	 Hello hello = (Hello)context.getBean("hello");
+	 
+	 Hello hello2 = context.getBean("hello", Hello.class);
+	 assertSame(hello, hello2);
+	 
+}

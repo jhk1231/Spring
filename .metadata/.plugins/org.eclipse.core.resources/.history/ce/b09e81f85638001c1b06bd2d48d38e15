@@ -1,0 +1,10 @@
+package com.example;
+
+public class Main {
+	public static void main(String[] args) {
+		Student stu = new Student("김철수", 24, 175);
+		System.out.println(stu);
+		
+		
+	}
+}

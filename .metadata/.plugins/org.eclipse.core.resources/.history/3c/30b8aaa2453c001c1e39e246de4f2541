@@ -1,0 +1,21 @@
+package com.example.test;
+
+import org.springframework.context.ApplicationContext;
+
+import com.example.Employee;
+
+import lombok.extern.java.Log;
+
+@Log
+public class EmployeeBeanTest {
+	public static void main(String[] args) {
+		// Create Spring Container
+		// XML로 Bean 설정 방식
+//		ApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationContext.xml");
+		ApplicationContext ctx = new AnnotationApplicationContext(ApplicationConfing.class);
+		Employee smith = ctx.getBean("smith", Employee.class);
+//		System.out.println(smith.toString());
+		// sysout을 쓰지 않고 Log로 출력 찍어본다.
+		log.info(smith.toString());
+	}
+}

@@ -1,0 +1,19 @@
+package com.example.test;
+
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+// 이것은 Junit만이 아닌 Spring이랑도 연동한다.
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration()
+public class HelloBeanJunitSpringTest {
+	@Autowired // 자동 바인딩 누구와 바인딩 해야할지 정해주어야 한다.
+	private ApplicationContext ctx;
+	
+	
+	
+	
+	
+}

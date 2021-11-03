@@ -1,0 +1,28 @@
+package com.example;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import lombok.extern.java.Log;
+
+@Log
+class StudentBeanJUnitTest {
+	
+	private GenericXmlApplicationContext ctx;
+	
+	@BeforeEach
+	public void init() {
+		this.ctx = new GenericXmlApplicationContext();
+	}
+	
+	@Test
+	@DisplatName("지민이 맞니?")
+	void test() {
+		this.ctx.load("classpath:applicationContext.xml");
+		this.ctx.refresh();
+		Student jimin = this.ctx.getBean("jimin", Student.class);
+		log.info(jimin.toString());
+	}
+
+}

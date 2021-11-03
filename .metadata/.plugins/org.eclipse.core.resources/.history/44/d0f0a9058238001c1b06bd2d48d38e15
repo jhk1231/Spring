@@ -1,0 +1,44 @@
+package com.example.test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import com.example.Hello;
+
+public class HelloBeanJUnitTest {
+	private ApplicationContext ctx;
+
+	// 테스트 전에 해야하는 행동
+	// 메소드 명은 중요한게 아니고 어노테이션이 중요하다.
+	@Before
+	public void init() {
+		this.ctx =  new GenericXmlApplicationContext("classpath:beans.xml");
+	}
+	
+	@Test
+	public void test() {
+		assertNotNull(this.ctx);
+	}
+	
+	@Test
+	public void test2() {
+		Hello hello = this.ctx.getBean("hello", Hello.class);
+		assertEquals("");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

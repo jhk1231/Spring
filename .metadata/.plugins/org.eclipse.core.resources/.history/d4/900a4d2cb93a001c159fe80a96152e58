@@ -1,0 +1,22 @@
+package com.example.test;
+
+import static org.junit.Assert.fail;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+@RunWith()
+@ContextConfiguration()
+public class StudentBeanJUnitSpringTest {
+	@Autowired
+	
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

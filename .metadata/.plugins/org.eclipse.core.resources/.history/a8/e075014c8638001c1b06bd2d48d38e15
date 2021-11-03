@@ -1,0 +1,9 @@
+package com.example.test;
+
+
+// 이것은 Junit만이 아닌 Spring이랑도 연동한다.
+public class HelloBeanJunitSpringTest {
+	
+	
+	
+}

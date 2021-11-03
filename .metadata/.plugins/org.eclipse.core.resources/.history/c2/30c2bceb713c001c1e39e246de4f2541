@@ -1,0 +1,25 @@
+package com.example;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@ToString
+@NoArgsConstructor
+@Component(value="jimin")
+public class Student {
+	@Value("조유리")
+	private String name;
+	@Value("22")
+	private int age;
+	@Value("음악, 댄스, 춤, 기타")
+	private List<String> hobbys;
+	@Value("160")
+	private double height;
+	@Value("50")
+	private double weight;
+}

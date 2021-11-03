@@ -1,0 +1,19 @@
+package com.example.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.example.Hello;
+
+@Configuration
+// ApplicationContext의 줄임말
+public class AppCtx {
+	
+	@Bean
+	public Hello hello() {
+		Hello hello = new Hello();
+		hello.setName("Spring");
+		hello.setPrinter(this.printer());
+		returnn hello;
+	}
+}

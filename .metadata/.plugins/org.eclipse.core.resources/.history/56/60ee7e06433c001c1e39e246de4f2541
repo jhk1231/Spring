@@ -1,0 +1,9 @@
+package com.example.test;
+
+public class EmployeeBeanTest {
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

@@ -1,0 +1,19 @@
+package com.example;
+
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Setter
+@NoArgsConstructor
+public class Hello {
+	private String name;
+	private Printer printer;
+
+	public String sayHello() {
+		return "Hello" + name;
+	}
+
+	public void print() {
+		this.printer.print(sayHello());
+	}
+}

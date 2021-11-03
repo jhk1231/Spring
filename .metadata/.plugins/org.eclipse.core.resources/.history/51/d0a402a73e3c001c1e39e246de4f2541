@@ -1,0 +1,10 @@
+package com.example;
+
+public class Employee {
+	private int empno; // 사원 번호
+	private String ename; // 사원명
+	private double salary; // 급여
+	private String job; // 하는 일
+	
+	
+}
