@@ -87,6 +87,10 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="SpringJdbcDemo"/>
+			<item value="ProfileDemo"/>
+			<item value="PropertyDemo"/>
+			<item value="EnvironmentDemo"/>
 			<item value="EnviromentDemo"/>
 			<item value="SpringLifecycle"/>
 			<item value="SpringDemo5"/>
@@ -102,6 +106,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SpringJdbcDemo"/>
+			<item value="ProfileDemo"/>
+			<item value="PropertyDemo"/>
+			<item value="EnvironmentDemo"/>
 			<item value="EnviromentDemo"/>
 			<item value="SpringLifecycle"/>
 			<item value="SpringDemo5"/>
