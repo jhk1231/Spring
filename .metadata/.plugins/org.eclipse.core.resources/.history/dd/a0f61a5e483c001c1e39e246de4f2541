@@ -1,7 +1,0 @@
-package com.example.test;
-
-import com.example.Employee;
-
-public class EmployeeInfo {
-	private Employee smith;
-}

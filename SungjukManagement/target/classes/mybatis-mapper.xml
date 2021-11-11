@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Student">
+	
+	<!-- 이 결과값을 JdbcDriver에게 넘긴다. -->	
+	<!-- parameterType: Java에서 넘어오는 값의 Type -->
+	<insert id="insert" parameterType="studentVo" statementType="PREPARED">
+		INSERT INTO student
+		VALUES(#{hakbun}, #{name}, #{kor} ,#{eng}, #{mat}, #{edp}, #{tot}, #{avg}, #{grade})
+	</insert>
+	
+	<resultMap type="studentVo" id="studentResultMap">
+		<result property="hakbun" javaType="String" column="hakbun" jdbcType="CHAR"/>
+		<result property="name" javaType="String" column="name" jdbcType="VARCHAR"/>
+		<result property="kor" javaType="int" column="kor" jdbcType="TINYINT"/>
+		<result property="eng" javaType="int" column="eng" jdbcType="TINYINT"/>
+		<result property="mat" javaType="int" column="mat" jdbcType="TINYINT"/>
+		<result property="edp" javaType="int" column="edp" jdbcType="TINYINT"/>
+		<result property="tot" javaType="int" column="tot" jdbcType="SMALLINT"/>
+		<result property="avg" javaType="double" column="avg" jdbcType="DECIMAL"/>
+		<result property="grade" javaType="java.lang.Character" column="grade" jdbcType="CHAR"/>
+	</resultMap>
+	
+	
+	<select id="selectList" resultMap="studentResultMap" resultType="studentVo">
+		SELECT * FROM Student
+		ORDER BY tot DESC
+	</select>
+	
+</mapper>

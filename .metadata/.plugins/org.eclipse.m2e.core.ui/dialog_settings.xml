@@ -19,6 +19,10 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\SpringHome\Servers"/>
+			<item value="D:\SpringHome\Membership1"/>
+			<item value="D:\SpringHome\BeforeSpring"/>
+			<item value="D:\SpringHome\SpringJdbcDemo"/>
 			<item value="D:\SpringHome\demo"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -43,15 +47,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.example.HelloWorld"/>
-			<item value="com.example.demo1"/>
 		</list>
 		<list key="groupId">
-			<item value="com.example"/>
 		</list>
 		<list key="artifactId">
-			<item value="HelloWorld"/>
-			<item value="demo1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -63,15 +62,20 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
-			<item value="1.0-SNAPSHOT"/>
 		</list>
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.example"/>
+			<item value="SpringJdbcDemo"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SungjukAnnotation"/>
+			<item value="MyBatisSpringDemo"/>
+			<item value="Membership"/>
+			<item value="SpringJdbcDemo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -2,16 +2,42 @@
 <section name="Workbench">
 	<list key="installedFeatures">
 		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
+		<item value="com.tomato.exerd.feature:3.3.13.20210616-1553"/>
 		<item value="net.mihai-nita.ansicon:1.4.4.202102080044"/>
 		<item value="org.aspectj:1.9.6.202103162301"/>
 		<item value="org.eclipse.ajdt:2.2.4.202103162301"/>
 		<item value="org.eclipse.buildship:3.1.5.v20210113-0929"/>
+		<item value="org.eclipse.datatools.common.doc.user:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.connectivity.doc.user:1.14.102.201911250848"/>
 		<item value="org.eclipse.datatools.connectivity.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.connectivity.oda.designer.core.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.connectivity.oda.designer.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.connectivity.oda.feature:1.14.102.201911250848"/>
 		<item value="org.eclipse.datatools.doc.user:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.apache.derby.feature:1.14.102.201911250848"/>
 		<item value="org.eclipse.datatools.enablement.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.hsqldb.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.ibm.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.ingres.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.jdbc.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.jdt.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.msft.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.mysql.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.oda.designer.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.oda.feature:1.14.102.201911221603"/>
+		<item value="org.eclipse.datatools.enablement.oracle.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.postgresql.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.sap.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.sdk.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.sqlite.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.enablement.sybase.feature:1.14.200.202008192017"/>
+		<item value="org.eclipse.datatools.intro:1.14.102.201911250848"/>
 		<item value="org.eclipse.datatools.modelbase.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.sdk.feature:1.14.102.201911250848"/>
 		<item value="org.eclipse.datatools.sqldevtools.ddlgen.feature:1.14.200.202009292210"/>
 		<item value="org.eclipse.datatools.sqldevtools.feature:1.14.200.202009292210"/>
+		<item value="org.eclipse.datatools.sqldevtools.parsers.feature:1.14.102.201911250848"/>
+		<item value="org.eclipse.datatools.sqltools.doc.user:1.14.102.201911250848"/>
 		<item value="org.eclipse.dltk.core.index.lucene:6.2.0.202005020530"/>
 		<item value="org.eclipse.dltk.core:6.2.0.202005020530"/>
 		<item value="org.eclipse.draw2d:3.10.100.201606061308"/>
@@ -78,6 +104,8 @@
 		<item value="org.eclipse.mylyn.team_feature:3.25.2.v20200828-1617"/>
 		<item value="org.eclipse.mylyn.wikitext.editors_feature:3.0.40.202110140008"/>
 		<item value="org.eclipse.mylyn_feature:3.25.2.v20200814-0512"/>
+		<item value="org.eclipse.net4j.db.h2:4.5.1.v20210828-0739"/>
+		<item value="org.eclipse.net4j.db:4.14.1.v20210830-0650"/>
 		<item value="org.eclipse.pde:3.14.900.v20210906-0500"/>
 		<item value="org.eclipse.php:7.2.0.202005271851"/>
 		<item value="org.eclipse.platform:4.21.0.v20210906-0842"/>
@@ -134,6 +162,17 @@
 			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.jst.j2ee.internal"/>
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\SpringHome\Membership"/>
+			<item value="D:\SpringHome\SpringJdbcDemo"/>
+			<item value="C:\Users\MZC\Documents\카카오톡 받은 파일\SpringJdbcDemo"/>
 		</list>
 	</section>
 </section>

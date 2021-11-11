@@ -1,9 +1,0 @@
-package com.example;
-
-public class Product {
-	private String pName;
-	private int pPrice;
-	private String maker;
-	private String color;
-
-}

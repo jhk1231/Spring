@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="City">
+
+	<resultMap type="cityVo" id="cityResult">
+		<result property="id" javaType="int" column="ID" jdbcType="INTEGER" />
+		<result property="name" javaType="String" column="Name" jdbcType="CHAR" />
+		<result property="countryCode" javaType="String" column="CountryCode" jdbcType="CHAR" />
+		<result property="district" javaType="String" column="District"  jdbcType="CHAR" />
+		<result property="population" javaType="int" column="Population" jdbcType="INTEGER" />
+	</resultMap>
+	
+	<select id="selectOneCity" parameterType="String" resultType="cityVo" resultMap="cityResult">
+		SELECT ID, Name, CountryCode, District, Population
+		FROM city 
+		WHERE Name = #{name}
+	</select>
+	<!-- parameterType: 값을 넣는것? 반복 설정을 하지 않아도 MyBaits에서 반복을 해준다.-->
+	<select id="selectListCity" parameterType="String" resultType="cityVo" resultMap="cityResult">
+		SELECT ID, Name, CountryCode, District, Population
+		FROM city 
+		WHERE CountryCode = #{countryCode}
+	</select>
+</mapper>
